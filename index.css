@@ -181,7 +181,133 @@ body {
 .nt1 { grid-area: 1 / 1 / 2 / 2; }
 .nt { grid-area: 1 / 1 / 2 / 2; }
 
-@ -25,3 +25,38 @@ html {
+/* Article les plus lus */
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 11px 11px;
+  grid-template-areas:
+    "Article1 Article4 Article7"
+    "Article2 Article5 Article8"
+    "Article3 Article6 Article9";
+}
+
+.Article2 { grid-area: Article2; }
+
+.Article3 { grid-area: Article3; }
+
+.Article4 { grid-area: Article4; }
+
+.Article7 { grid-area: Article7; }
+
+.Article8 { grid-area: Article8; }
+
+.Article9 { grid-area: Article9; }
+
+.Article6 { grid-area: Article6; }
+
+.Article5 { grid-area: Article5; }
+
+.Article1 { grid-area: Article1; }
+
+.Article2 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.Article3 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.Article4 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.Article7 {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.Article8 {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.Article9 {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.Article6 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.Article5 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.Article1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+/* Fin article  */
+
+/* Article Video */
+.video {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: repeat(2, 1fr) 1.1fr 0.9fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Video1 Video2"
+    "Video1 Video3"
+    "Video1 Video4"
+    "Video1 Video5";
+}
+
+.Video1 { grid-area: Video1; }
+
+.Video2 { grid-area: Video2; }
+
+.Video3 { grid-area: Video3; }
+
+.Video4 { grid-area: Video4; }
+
+.Video5 { grid-area: Video5; }
+
+.Video1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.Video2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.Video3 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.Video4 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.Video5 {
+  grid-row: 4;
+  grid-column: 2;
+}
+/* fin article video */
+
+
+ -25,3 +25,38 @@ html {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
