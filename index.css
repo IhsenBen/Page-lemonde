@@ -180,3 +180,43 @@ body {
 .nt8 { grid-area: 4 / 2 / 5 / 3; }
 .nt1 { grid-area: 1 / 1 / 2 / 2; }
 .nt { grid-area: 1 / 1 / 2 / 2; }
+
+@ -25,3 +25,38 @@ html {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.footerbottom{
+    border-top: .1rem solid #a4a9b4;
+    padding-top: 2.4rem;
+}
+
+.footertitre{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.28;
+    position: relative;
+}
+
+.footersocial{
+    display: flex;
+}
+
+.footerreseausocial{
+    list-style: none;
+    display: flex;
+    height: auto;
+    padding-top: 0;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    position: relative;
+    margin-left: 0;
+}
+
+.footer__link{
+    line-height: 1.23;
+    display: inline-flex;
+    width: 100%;
+    align-items: flex-end;
+}
