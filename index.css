@@ -199,7 +199,6 @@ body {
 
   /* bene part */ 
 
-
 /* Article les plus lus */
 .article {
   display: grid;
@@ -276,7 +275,7 @@ body {
 }
 /* Fin article  */
 
-/* Article Video */
+/* Article video */
 .video {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
