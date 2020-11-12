@@ -212,21 +212,13 @@ body {
 }
 
 .Article2 { grid-area: Article2; }
-
 .Article3 { grid-area: Article3; }
-
 .Article4 { grid-area: Article4; }
-
 .Article7 { grid-area: Article7; }
-
 .Article8 { grid-area: Article8; }
-
 .Article9 { grid-area: Article9; }
-
 .Article6 { grid-area: Article6; }
-
 .Article5 { grid-area: Article5; }
-
 .Article1 { grid-area: Article1; }
 
 .Article2 {
@@ -289,13 +281,9 @@ body {
 }
 
 .Video1 { grid-area: Video1; }
-
 .Video2 { grid-area: Video2; }
-
 .Video3 { grid-area: Video3; }
-
 .Video4 { grid-area: Video4; }
-
 .Video5 { grid-area: Video5; }
 
 .Video1 {
@@ -322,13 +310,14 @@ body {
   grid-row: 4;
   grid-column: 2;
 }
+
 /* fin article video */
 
 
- -25,3 +25,38 @@ html {
+ /* -25,3 +25,38 @@ html {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-}
+} */
 
 .footerbottom{
     border-top: .1rem solid #a4a9b4;
