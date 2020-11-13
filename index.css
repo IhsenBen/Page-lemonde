@@ -356,6 +356,49 @@ p {
 
 /* fin article video */
 
+/* Blog Dessines */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.2fr 2.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Blog-Dessines . ."
+    "Image+titre1 Image+titre2 Image+titre3";
+  padding-top: 5.2rem  
+}
+
+.Blog-Dessines { grid-area: Blog-Dessines; }
+
+.Image+titre1 { grid-area: Image+titre1; }
+
+.Image+titre2 { grid-area: Image+titre2; }
+
+.Image+titre3 { grid-area: Image+titre3; }
+
+/* Fin blog dessines */
+
+/* Services */
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.2fr 2.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Services . ."
+    "Services1 Services2 Services3";
+  /* padding-top: 3.2rem   */
+}
+
+.Services { grid-area: Services; }
+
+.Services1 { grid-area: Services1; }
+
+.Services2 { grid-area: Services2; }
+
+.Services3 { grid-area: Services3; }
+
+/* Fin Services */
 
  /* -25,3 +25,38 @@ html {
     line-height: 1.6;
