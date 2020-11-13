@@ -17,6 +17,11 @@ body, h1, h2, h3, h4, h5, h6, ol, p, ul {
     padding: 0;
     font-weight: inherit;
 }
+
+.hcenter{
+  text-align: center;
+}
+
 p {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -24,6 +29,9 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+.nt{
+  font-size: 1rem;
 }
 
 .article__desc {
@@ -222,7 +230,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+     gap:0.5fr;
     grid-template-areas:
       "nt1 nt2"
       "nt3 nt4"
