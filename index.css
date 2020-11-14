@@ -17,6 +17,8 @@ body, h1, h2, h3, h4, h5, h6, ol, p, ul {
     padding: 0;
     font-weight: inherit;
 }
+.hcenter{
+text-align: center;}
 p {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -57,16 +59,25 @@ p {
       "tnb1 tnb2 tnb3 tnb4 tnb5 tnb6";
     grid-area: titre-nav-blue;
     background-color: #036487;
-    font-size: 1.1rem;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 0.8rem;
     padding: 2rem 0 0;
+    color: white;
   }
 
-  .tnb1 { grid-area: tnb1; }
-  .tnb2 { grid-area: tnb2; }
-  .tnb3 { grid-area: tnb3; }
-  .tnb4 { grid-area: tnb4; }
-  .tnb5 { grid-area: tnb5; }
-  .tnb6 { grid-area: tnb6; }
+  .tnb1 { grid-area: tnb1;
+    border-right: 1px solid #2a303b; }
+  .tnb2 { grid-area: tnb2;
+    border-right: 1px solid #2a303b; }
+  .tnb3 { grid-area: tnb3;
+    border-right: 1px solid #2a303b; }
+  .tnb4 { grid-area: tnb4;
+    border-right: 1px solid #2a303b; }
+  .tnb5 { grid-area: tnb5; 
+    border-right: 1px solid #2a303b;}
+  .tnb6 { grid-area: tnb6;
+    border-right: 1px solid #2a303b; }
 
   .container {
     padding-top: 2.4rem;
