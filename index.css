@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+@font-face {font-family: "TheAntiquaSun"; src: url("//db.onlinewebfonts.com/t/8a686d9696893e913fbb9c2fc638beb8.eot"); src: url("//db.onlinewebfonts.com/t/8a686d9696893e913fbb9c2fc638beb8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8a686d9696893e913fbb9c2fc638beb8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8a686d9696893e913fbb9c2fc638beb8.woff") format("woff"), url("//db.onlinewebfonts.com/t/8a686d9696893e913fbb9c2fc638beb8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8a686d9696893e913fbb9c2fc638beb8.svg#TheAntiquaSun") format("svg"); }
 
 *, :after, :before {
     box-sizing: inherit;
@@ -11,14 +11,17 @@ div {
     display: block;
 }
 
-body, h1, h2, h3, h4, h5, h6, ol, p, ul {
-  
-    margin: 0;
-    padding: 0;
-    font-weight: inherit;
+h1, h2, h3 {
+
+  font-family: "TheAntiquaSun";
+
 }
+
+
 .hcenter{
-text-align: center;}
+text-align: center;
+}
+
 p {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -29,7 +32,7 @@ p {
 }
 
 .article__desc {
-  font-family: 'Open Sans', sans-serif;
+  
   margin: 1.6rem 0;
   margin-left: 1.3rem;
   margin-right: 1.3rem;
@@ -39,16 +42,6 @@ p {
   text-align: justify;
 }
 
-.grid-container {
-   
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "titre-nav-blue"
-      "container";
-  }
 
   .titre-nav-blue {
     display: grid;
@@ -109,7 +102,7 @@ p {
   }
     
   .big-news {
-    font-family: 'Antic Slab', serif;
+
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     grid-template-rows: 1fr;
@@ -151,7 +144,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 2fr;
+    column-gap: 80px;
     grid-template-areas:
       "mnt-1 mnt2";
     grid-area: main-new-text;
@@ -167,7 +160,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.8fr 1.2fr;
-    grid-column-gap: 3.4rem;
+    column-gap: 80px;
     grid-template-areas:
       "three-news-pictures"
       "bottom-main-news";
@@ -178,7 +171,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
    
-    gap: 80px;
+    column-gap: 80px;
     grid-template-areas:
       "tnp1 tnp2 tnp3";
     grid-area: three-news-pictures;
@@ -209,7 +202,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    column-gap: 80px;
     grid-template-areas:
       "bottom-main-news-pictures"
       "news-titles";
@@ -219,21 +212,25 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.9fr 1.1fr;
-    gap: 0px 0px;
+    column-gap: 80px;
     grid-template-areas:
       "bmn1 bmn2"
       "bmn3 bmn4";
     grid-area: bottom-main-news-pictures;
   }
-  .bmn1 { grid-area: bmn1; }
-  .bmn2 { grid-area: bmn2; }
-  .bmn3 { grid-area: bmn3; }
-  .bmn4 { grid-area: bmn4; }
+  .bmn1 { grid-area: bmn1; 
+    border-bottom: 1px solid #2a303b;}
+  .bmn2 { grid-area: bmn2;
+    border-bottom: 1px solid #2a303b; }
+  .bmn3 { grid-area: bmn3;
+    border-bottom: 1px solid #2a303b;  }
+  .bmn4 { grid-area: bmn4; 
+    border-bottom: 1px solid #2a303b;}
   .news-titles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+    column-gap: 80px;
     grid-template-areas:
       "nt1 nt2"
       "nt3 nt4"
@@ -241,14 +238,23 @@ p {
       "nt7 nt8";
     grid-area: news-titles;
   }
-  .nt1 { grid-area: nt1; }
-  .nt2 { grid-area: nt2; }
-  .nt3 { grid-area: nt3; }
-  .nt4 { grid-area: nt4; }
-  .nt5 { grid-area: nt5; }
-  .nt6 { grid-area: nt6; }
-  .nt7 { grid-area: nt7; }
-  .nt8 { grid-area: nt8; }
+  .nt1 { grid-area: nt1;
+    border-bottom: 1px solid #2a303b;
+   }
+  .nt2 { grid-area: nt2;
+    border-bottom: 1px solid #2a303b;  }
+  .nt3 { grid-area: nt3;
+    border-bottom: 1px solid #2a303b; }
+  .nt4 { grid-area: nt4;
+    border-bottom: 1px solid #2a303b; }
+  .nt5 { grid-area: nt5;
+    border-bottom: 1px solid #2a303b; }
+  .nt6 { grid-area: nt6; 
+    border-bottom: 1px solid #2a303b;}
+  .nt7 { grid-area: nt7; 
+    border-bottom: 1px solid #2a303b;}
+  .nt8 { grid-area: nt8;
+    border-bottom: 1px solid #2a303b; }
 
 
   /* bene part */ 
