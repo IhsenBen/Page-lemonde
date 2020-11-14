@@ -116,14 +116,17 @@ p {
   .side-bige-news {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    grid-template-rows: 1fr 1fr 500px;
+     row-gap: 10px;
     grid-template-areas:
       "side-news1"
       "side-news2";
     grid-area: side-bige-news;
+   text-align: justify;
   }
-  .side-news1 { grid-area: side-news1; }
+
+  .side-news1 { grid-area: side-news1; 
+    border-bottom: 1px solid #2a303b;}
   .side-news2 { grid-area: side-news2; }
 
 
