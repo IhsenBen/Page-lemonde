@@ -91,8 +91,9 @@ p {
     text-align: justify;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 1fr;
-    gap: 5px 5px;
+    grid-template-rows: 0.5fr 0.5fr;
+   column-gap: 30px;
+    
     grid-template-areas:
       "big-news"
       "main-news-b";
@@ -102,11 +103,11 @@ p {
   }
     
   .big-news {
-
+    column-gap: 30px;
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    grid-template-rows: 1fr;
-    gap: 5px 5px;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 0.5fr;
+    column-gap: 30px;
     grid-template-areas:
       "main-new side-bige-news";
     grid-area: big-news;
@@ -116,7 +117,7 @@ p {
   .side-bige-news {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 500px;
+    grid-template-rows: 0.5fr 0.5fr;
      row-gap: 10px;
     grid-template-areas:
       "side-news1"
@@ -132,9 +133,9 @@ p {
 
   .main-new {
     display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1.5fr 1fr;
-    gap: 1px 1px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3r 0.1fr;
+    
     grid-template-areas:
       "big-title"
       "main-new-text";
@@ -145,16 +146,15 @@ p {
 
   .main-new-text {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 80px;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr;
+   column-gap: 80px;
     grid-template-areas:
       "mnt-1 mnt2";
-    grid-area: main-new-text;
-    margin-left: 1.3rem;
-    margin-right: 1.3rem;
+   
   }
-  .mnt-1 { grid-area: mnt-1; }
+  .mnt-1 { grid-area: mnt-1; 
+  }
   .mnt2 { grid-area: mnt2; }
   
   .main-news-b {
@@ -162,19 +162,23 @@ p {
     border-top: .1rem solid #d5d8dc;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 1.2fr;
+    grid-template-rows: 0.2fr 0.2fr;
     column-gap: 80px;
     grid-template-areas:
       "three-news-pictures"
       "bottom-main-news";
     grid-area: main-news-b;
   }
+  .three-news-pictures> div{
+    text-align: center;
+   
+  }
   .three-news-pictures {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-   
-    column-gap: 80px;
+    border-bottom: 1px solid #2a303b;
+    column-gap: 30px;
     grid-template-areas:
       "tnp1 tnp2 tnp3";
     grid-area: three-news-pictures;
@@ -210,6 +214,9 @@ p {
       "bottom-main-news-pictures"
       "news-titles";
     grid-area: bottom-main-news;
+  }
+  .bottom-main-news > div {
+    text-align: center;
   }
   .bottom-main-news-pictures {
     display: grid;
