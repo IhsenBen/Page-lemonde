@@ -228,7 +228,7 @@ p {
 
     .main-page{
      display:grid;
-     grid-template-columns: 2fr 0.2fr 2fr;
+     grid-template-columns: 2fr 1fr 2fr;
      grid-template-rows: 1fr;
      grid-template-areas:
        "emptyleft wrapper emptyright";
@@ -245,7 +245,7 @@ p {
 {
   display:grid;
   grid-template-columns:1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
   grid-template-areas:
   "container"
   "article"
@@ -639,11 +639,17 @@ p {
   grid-area: article2;
 }
 
-.blocarticle { grid-area: blocarticle; }
+.blocarticle { grid-area: blocarticle;
+border-top: solid 1px #D5D8DC;
+border-bottom: solid 1px#D5D8DC; }
 
-.blocarticle1 { grid-area: blocarticle1; }
+.blocarticle1 { grid-area: blocarticle1; 
+  border-top: solid 1px #D5D8DC;
+  border-bottom: solid 1px#D5D8DC;}
 
-.blocarticle2 { grid-area: blocarticle2; }
+.blocarticle2 { grid-area: blocarticle2;
+  border-top: solid 1px #D5D8DC;
+  border-bottom: solid 1px#D5D8DC; }
 
 .article3 {
   display: grid;
@@ -657,11 +663,17 @@ p {
   grid-area: article3;
 }
 
-.blocarticle3 { grid-area: blocarticle3; }
+.blocarticle3 { grid-area: blocarticle3; 
+  border-top: solid 1px #D5D8DC;
+  border-bottom: solid 1px#D5D8DC;}
 
-.blocarticle4 { grid-area: blocarticle4; }
+.blocarticle4 { grid-area: blocarticle4;
+  border-top: solid 1px #D5D8DC;
+  border-bottom: solid 1px#D5D8DC; }
 
-.blocarticle5 { grid-area: blocarticle5; }
+.blocarticle5 { grid-area: blocarticle5;
+  border-top: solid 1px #D5D8DC;
+  border-bottom: solid 1px#D5D8DC; }
 
 /* fin articles 3 colonnes */
 
@@ -702,17 +714,22 @@ p {
   grid-area: Colonne2;
 }
 
-.lignearticle { grid-area: lignearticle; }
+.lignearticle { grid-area: lignearticle; 
+  border-top: solid 1px #D5D8DC;
+  border-bottom: solid 1px#D5D8DC;}
 
-.lignearticle1 { grid-area: lignearticle1; }
+.lignearticle1 { grid-area: lignearticle1;border-top: solid 1px #D5D8DC;
+  border-bottom: solid 1px#D5D8DC; }
 
-.lignearticle2 { grid-area: lignearticle2; }
+.lignearticle2 { grid-area: lignearticle2; border-top: solid 1px #D5D8DC;
+  border-bottom: solid 1px#D5D8DC;}
 
 /* fin articles reduit 2 colonnes */
 
 /* Blog Dessines */
 .blog {
   display: grid;
+  text-align: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.2fr 2.1fr;
   gap: 0px 0px;
@@ -730,11 +747,20 @@ p {
 
 .Image+titre3 { grid-area: Image+titre3; }
 
+.blog-dessines{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+ 
+
+}
+
 /* Fin blog dessines */
 
 /* Services */
 .info {
   display: grid;
+  text-align: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.2fr 2.1fr;
   gap: 0px 0px;
@@ -945,4 +971,9 @@ a {
   background-repeat: no-repeat;
   display: inline-block;
   flex-shrink: 0;
+}
+
+.logocamps{
+  height:25px;
+  width: 170px;
 }
