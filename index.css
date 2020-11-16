@@ -383,6 +383,7 @@ p {
 
 /* fin article video */
 
+/* article 3 colonnes */
 .article {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -444,6 +445,53 @@ p {
 .blocarticle4 { grid-area: blocarticle4; }
 
 .blocarticle5 { grid-area: blocarticle5; }
+
+/* fin articles 3 colonnes */
+
+/* article reduit 2 colonnes */
+.articlereduit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Colonne1 Colonne2";
+}
+
+.Colonne1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "image"
+    "imagetitre";
+  grid-area: Colonne1;
+}
+
+.image { grid-area: image; }
+
+.imagetitre { grid-area: imagetitre; }
+
+.Colonne2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "lignearticle"
+    "lignearticle1"
+    "lignearticle2";
+  grid-area: Colonne2;
+}
+
+.lignearticle { grid-area: lignearticle; }
+
+.lignearticle1 { grid-area: lignearticle1; }
+
+.lignearticle2 { grid-area: lignearticle2; }
+
+/* fin articles reduit 2 colonnes */
 
 /* Blog Dessines */
 .blog {
