@@ -383,6 +383,68 @@ p {
 
 /* fin article video */
 
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "article1 article2 article3";
+}
+
+.article1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "image1"
+    "titreimage";
+  grid-area: article1;
+  height: 300px;
+  width: 200px;
+}
+
+.image1 { grid-area: image1; }
+
+.titreimage { grid-area: titreimage; }
+
+.article2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "blocarticle"
+    "blocarticle1"
+    "blocarticle2";
+  grid-area: article2;
+}
+
+.blocarticle { grid-area: blocarticle; }
+
+.blocarticle1 { grid-area: blocarticle1; }
+
+.blocarticle2 { grid-area: blocarticle2; }
+
+.article3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "blocarticle3"
+    "blocarticle4"
+    "blocarticle5";
+  grid-area: article3;
+}
+
+.blocarticle3 { grid-area: blocarticle3; }
+
+.blocarticle4 { grid-area: blocarticle4; }
+
+.blocarticle5 { grid-area: blocarticle5; }
+
 /* Blog Dessines */
 .blog {
   display: grid;
@@ -436,7 +498,8 @@ p {
   grid-template-areas:
     "Footer1 Footer2 Footer3 Footer4"
     "Footer5 Footer5 Footer5 Footer5";
-    background-color: rgba(0, 0, 0, 0.7) ;
+  background-color: rgba(0, 0, 0, 0.7) ;
+  font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif;
 }
 
 .Footer1 { grid-area: Footer1; }
