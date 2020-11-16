@@ -169,6 +169,7 @@ p {
         
         overflow: hidden;
         background-color:white;
+        /* background-color:#2A303B ; */
       }
       
       li {
@@ -763,8 +764,9 @@ p {
   grid-template-areas:
     "Footer1 Footer2 Footer3 Footer4"
     "Footer5 Footer5 Footer5 Footer5";
-  background-color: rgba(0, 0, 0, 0.7) ;
+  background-color:#2A303B;
   font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif;
+  /* color: #2A303B; */
 }
 
 .Footer1 { grid-area: Footer1; }
@@ -779,6 +781,7 @@ p {
     "Case2"
     "Case3";
   grid-area: Footer2;
+  color: #2A303B;
 }
 
 .Case1 { grid-area: Case1; }
@@ -849,16 +852,17 @@ p {
 
 .footertitre{
   margin-right: 3.2rem;
-  color: #fff;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   line-height: 1.28;
   position: relative;
+  color: #fff;
 }
 
 .footersocial{
   display: flex;
   margin-top: 0;
+    /* background-color: #2A303B; */
 }
 
 .footerreseausocial{
@@ -866,12 +870,20 @@ p {
   display: flex;
   height: auto;
   padding-top: 0;
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   line-height: 1;
   position: relative;
   margin-left: 0;
   flex-direction: row;
   width: auto;
+}
+
+.footerlien{
+  background-color:#2A303B ;
+}
+
+.footercategorie{
+  background-color:#2A303B ;
 }
 
 .footer__link{
@@ -880,6 +892,20 @@ p {
   width: 100%;
   align-items: flex-end;
   padding-left: 0;
+  color: #fff;
+}
+
+/* .footerliste{
+  background-color: #2A303B ;
+} */
+
+.footerapps{
+  background-color:#2A303B ;
+  color: #fff;
+}
+
+h5{
+  color: #fff;
 }
 
 a {
@@ -891,6 +917,7 @@ a {
 .footer__icon {
   width: 2.9rem;
   height: 1.8rem;
+  background-color:#2A303B ;
 }
 
 .icon__facebook {
