@@ -51,7 +51,8 @@ h1, h2, h3, h4 {
   align-self: center;
   display: flex;
   padding: .8rem 0;
-  margin-right: 10px;
+  margin-right: 5px;
+  color: black;
 }
 .icon__nav-connexion{
   margin-top: auto;
